@@ -1,9 +1,9 @@
 .sidebar {
   background-image: url("img/squirrel.jpg");
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 40vw;
+  width: 30vw;
 }
 body {
   display: flex;
@@ -24,15 +24,59 @@ body {
   height: auto;
   display: flex;
   justify-content: center;
+  max-height: 120px;
 }
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
+  height: 100px;
+  align-self: center;
 }
 @font-face {
   font-family: "Norse-Bold";
   src: url("font/Norse-Bold.otf");
 }
-odin {
+.odin {
   font-family: Norse-Bold;
+  align-self: center;
+  font-size: 80px;
+}
+.main {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+form {
+  display: flex;
+  font-size: 10px;
+}
+.top {
+  padding: 24px;
+}
+.middle {
+  background-color: white;
+  padding: 16px;
+
+  width: 100%;
+}
+.bottom {
+  padding: 24px;
+}
+.message {
+  margin: 0;
+}
+label {
+  padding-top: 10px;
+}
+.textContainer {
+  max-width: 800px;
 }
