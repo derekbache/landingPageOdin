@@ -1,0 +1,38 @@
+.sidebar {
+  background-image: url("img/squirrel.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40vw;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  top: 20vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("font/Norse-Bold.otf");
+}
+odin {
+  font-family: Norse-Bold;
+}
