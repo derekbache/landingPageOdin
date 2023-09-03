@@ -35,7 +35,8 @@
             <label for="email">EMAIL</label>
             <input type="text" id="email" name="email" />
             <label for="password">PASSWORD</label>
-            <input type="text" id="password" name="password" />
+            <input type="text" id="password" name="password" class="error" />
+            <p class="validation" id="validation">*Passwords do not match</p>
           </div>
           <div class="column">
             <label for="last_name">LAST NAME</label>
@@ -43,14 +44,22 @@
             <label for="phone">PHONE NUMBER</label>
             <input type="text" id="phone" name="phone" />
             <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="text" name="confirmPassword" id="confirmPassword" />
+            <input
+              type="text"
+              name="confirmPassword"
+              id="confirmPassword"
+              class="error"
+            />
           </div>
         </form>
       </div>
       <div class="bottom">
-        <button>Create Account</button>
+        <button type="submit">Create Account</button>
+        <br />
+        <br />
         <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
